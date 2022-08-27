@@ -422,6 +422,19 @@ img{
   font-weight: 500;
   font-size: 35px;
   line-height: 42px;
+  position: relative;
+  padding-bottom: 10px;
+}
+.section-title::after{
+  display: block;
+  content: '';
+  width: 253px;
+  height: 3px;
+  background: #006DFE;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+
 }
 
 
@@ -588,3 +601,32 @@ img{
 
 }
 /*Benefits styles end */
+
+/* Places styles start */
+.places_caption{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 36px;
+}
+.places_title{
+  margin-right: 15px;
+}
+.places_view-all{
+  font-size: 16px;
+  line-height: 24px;
+  color: #006DFE;
+  text-decoration: none;
+  padding-right: 59px;
+  background: url(../img/svg/arrow-right_icon.svg) no-repeat right center;
+
+}
+.places_view-all:hover,.places_view-all:focus{
+  opacity: .55;
+}
+
+.places_cards{
+  
+}
+/* Places styles start */
