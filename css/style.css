@@ -479,6 +479,7 @@ img{
   background: url(../img/img_intro.jpg) no-repeat center;
   background-size: cover;
   padding-top: 263px;
+  padding-bottom: 223px;
 }
 .intro_title{
   font-weight: 500;
@@ -603,6 +604,9 @@ img{
 /*Benefits styles end */
 
 /* Places styles start */
+.places{
+  margin-bottom: 131px;
+}
 .places_caption{
   display: flex;
   flex-wrap: wrap;
@@ -627,6 +631,61 @@ img{
 }
 
 .places_cards{
-  
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 10px;
+}
+.places_card{
+  position: relative;
+  overflow: hidden;
+}
+.places_card::after{
+  display: block;
+  content: '';
+  width: 100%;
+  height: 100%;
+  background-color: rgba(21, 24, 36, 0.4);
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+}
+.places_card:hover .places_card-pic{
+  transform: scale(1.1);
+}
+.places_card-title{
+  color: white;
+  position: absolute;
+  font-size: 50px;
+  line-height: 60px;
+  bottom: 27px;
+  left: 29px;
+  z-index: 3;
+}
+.places_card_size_lg{
+  grid-column: span 3;
+}
+.places_card_size_sm{
+  grid-column: span 2;
+}
+.places_card-pic{
+  width: 100%;
+  transition: .2s all;
+}
+.places_card-pic_size_lg{
+  height: 354px;
+  object-fit: cover;
+}
+.places_card-pic_size_sm{
+  height: 283px;
+  object-fit: cover;
+}
+.places_card-link{
+  position: absolute;
+  z-index: 4;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 /* Places styles start */
