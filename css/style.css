@@ -741,8 +741,13 @@ img{
   grid-template-columns: repeat(3, 1fr);
   gap: 57px;
 }
+.top_card{
+  display: flex;
+  flex-direction: column;
+}
 .top_card-pic{
   position: relative;
+  margin-bottom: 45px;
 }
 .top_card-title{
   font-weight: 500;
@@ -769,6 +774,7 @@ img{
   line-height: 24px;
   color: white;
   padding-right: 20px;
+  margin-right: 14px;
   background: url(../img/svg/heart-icon.svg) no-repeat right;
 }
 .top_card-comments{
@@ -778,5 +784,23 @@ img{
   color: white;
   padding-right: 23px;
   background: url(../img/svg/comments-icon.svg) no-repeat right;
+}
+.top_card-desc{
+  font-size: 16px;
+  line-height: 24px;
+  margin-bottom: 31px;
+}
+.top_card-more{
+  width: 118px;
+  padding: 12px 19px;
+  background: #006DFE;
+  text-decoration: none;
+  color: #fff;
+  font-size: 16px;
+  margin: auto 0 0 0;
+}
+
+.top_card-more:hover, .top_card-more:focus, .top_card-more:active{
+  background-color: #094391;
 }
 /* Top styles end */
