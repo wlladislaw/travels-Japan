@@ -444,6 +444,12 @@ img{
   top: 0;
   left: 0;
   width: 100%;
+  transition: .25s linear;
+  padding-bottom: 20px;
+  z-index: 999;
+}
+.header_active{
+  background: #0E1D28;
 }
 
 .header_wrapper{
@@ -804,3 +810,26 @@ img{
   background-color: #094391;
 }
 /* Top styles end */
+
+/* Videos styles start */
+
+.videos{
+  width: 100%;
+}
+.videos_wrapper{
+  max-width: 1440px;
+  margin: 0 auto;
+  position: relative;
+}
+.video_item{
+  padding-top: 56.25%;
+}
+
+.video_element{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+/* Videos styles end */
