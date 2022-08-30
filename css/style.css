@@ -833,3 +833,43 @@ img{
   height: 100%;
 }
 /* Videos styles end */
+
+/* Footer styles start */
+
+.footer{
+  background: #0E1D28;
+  padding: 119px 0;
+}
+.footer_item{
+  display: flex;
+  flex-wrap: wrap;
+}
+.footer_logo{
+  width: 50%;
+}
+.footer_nav{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 50%;
+}
+
+.footer_menu-title{
+  color: #fff;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+}
+.footer_menu-link{
+  color: #fff;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  text-decoration: none;
+}
+.footer_menu-link:hover, .footer_menu-link:focus, .footer_menu-link:active{
+  opacity: .75;
+}
+
+
+/* Footer styles end */
